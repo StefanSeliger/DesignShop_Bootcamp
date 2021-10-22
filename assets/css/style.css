@@ -1,0 +1,252 @@
+/* ================================= 
+        General Styles
+================================= */
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@300;400;500;600;700&family=Rock+Salt&family=Secular+One&display=swap');
+
+/* Font Families & Farben 
+font-family: 'Jura', sans-serif;
+font-family: 'Rock Salt', cursive;
+font-family: 'Secular One', sans-serif;
+
+Farbeb: rgb(249, 234, 63), rgb(40, 40, 38)
+*/
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Jura', sans-serif;
+    font-size: 10px;
+    scroll-behavior: smooth;
+    color: white; 
+}
+
+span {
+    font-family: 'Secular One', sans-serif;
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+p {
+    font-size: 3rem;
+}
+
+/* ================================= 
+        Header Styles
+================================= */
+
+header {
+    background:  linear-gradient(black, black), url("https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MzZ8eldFQWxOTkhhOGN8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60");
+    background-blend-mode: saturation;
+    position: center; 
+    background-size: cover; 
+    background-repeat: no-repeat;
+    width: 100vw;
+}
+
+header section {
+    padding: 0 5vw; 
+}
+
+header section > div {
+    display: inline-block;
+    width: 48%; 
+    color: white; 
+}
+
+header section div a {
+    text-decoration: none;
+    color: black;
+    font-size: 2rem;
+    font-weight: bold;
+    background: rgb(249, 234, 63); 
+    padding: 20px 40px; 
+    border-radius: 5%;
+    margin-left: 10vw; 
+}
+
+header section div:first-of-type a:hover {
+    text-decoration: underline;
+}
+
+header section div:last-of-type {
+    text-align: right;
+}
+
+header section div:last-of-type h1 {
+    font-family: 'Secular One', sans-serif;
+    font-size: 10rem;
+    line-height: 70px;
+    letter-spacing: -2px;
+}
+
+header section div:last-of-type h1:first-of-type {
+    padding-top: 45vh; 
+}
+
+header section div:last-of-type h1:last-of-type {
+    padding-bottom: 45vh; 
+}
+
+/* ================================= 
+        Header Navigation
+================================= */
+aside {
+    background: rgb(249, 234, 63); 
+    position: sticky; 
+    top: 0; 
+    bottom: 0; 
+    padding: 2vh 0; 
+}
+
+aside nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+aside nav ul li {
+    display: inline-block; 
+    margin: 0 3vw; 
+}
+
+aside nav ul li a {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: rgb(40, 40, 38); 
+    padding: 0 1vw;
+}
+
+/* ================================= 
+        Main Styles
+================================= */
+main {
+    background: linear-gradient(black, black), url("https://images.unsplash.com/photo-1575722290270-626b0208df99?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YmFja2dyb3VuZCUyMGRhcmt8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60");
+    min-height: 500px;
+    background-blend-mode: saturation;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* About */
+main article {
+    margin: 0 0 25vh 0; 
+    text-align: center;
+    padding: 20vh 8vw 0 8vw; 
+}
+
+
+main article h2 { 
+    font-size: 6rem;
+    font-weight: bold;
+}
+
+#marke { 
+    font-family: 'Secular One', sans-serif;
+    line-height: 70px;
+    letter-spacing: -2px;
+}
+
+/* Main allgemein */
+main section {
+    padding: 10vh 8vw;
+    text-align: center;
+}
+
+main section h2 { 
+    text-align: left;
+    font-weight: bold;
+    font-size: 6rem;
+    margin-bottom: 3vh;
+}
+
+main section div div {
+    display: inline-block;
+    padding: 0 auto; 
+    margin: 0 auto;  
+}
+
+main section div div img {
+    width: 400px; 
+    height: 500px; 
+}
+
+main section div div h3 {
+    font-weight: bold;
+    font-size: 3rem;
+    margin: 3vh 0;
+}
+
+main section div div p {
+    margin-bottom: 2vh;
+}
+
+main section div div button {
+    font-size: 3rem;
+    padding: 3% 7%; 
+    background-color: rgb(249, 234, 63); 
+    border: none; 
+    border-radius: 5px; 
+}
+
+main section div div button:hover {
+    text-decoration: underline; 
+}
+
+main section div div {
+    display: inline-block;
+    padding: 0 auto; 
+    margin: 0 1vw; ;  
+}
+
+/* Newsletter */
+#newsletter {
+    background: rgb(249, 234, 63); 
+    color: rgb(40, 40, 38); 
+    width: 25vw; 
+    height: 50vh; 
+    margin: 0 auto; 
+    text-align: center; 
+}
+
+#newsletter > h2 {
+    padding-top: 2vh; 
+    text-align: center; 
+}
+
+#newsletter:hover {
+    box-shadow: 0 0 2px 2px rgb(249, 234, 63);
+}
+
+main section div form input {
+    display: block; 
+    color: rgb(249, 234, 63); 
+    background: rgb(40, 40, 38); 
+    margin-top: 1vh; 
+    width: 80%; 
+
+}
+
+/* ================================= 
+        Footer Styles
+================================= */
+footer {
+    background: rgb(40, 40, 38);
+    height: 30vh; 
+}
+
+footer div {
+    padding: 5vh 0 0 10vw; 
+}
+
+footer div h2 { 
+    font-family: 'Secular One', sans-serif;
+    font-size: 4rem;
+    font-weight: bold;
+}
