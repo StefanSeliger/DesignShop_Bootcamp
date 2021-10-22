@@ -8,7 +8,7 @@ font-family: 'Jura', sans-serif;
 font-family: 'Rock Salt', cursive;
 font-family: 'Secular One', sans-serif;
 
-Farbeb: rgb(249, 234, 63), rgb(40, 40, 38)
+Farbe: rgb(249, 234, 63), rgb(40, 40, 38)
 */
 
 
@@ -33,6 +33,18 @@ span {
 
 p {
     font-size: 3rem;
+}
+
+.marke { 
+    font-family: 'Secular One', sans-serif;
+    line-height: 70px;
+    letter-spacing: -2px; 
+}
+
+h2 { 
+    font-weight: bold;
+    font-size: 6rem;
+    margin-bottom: 3vh;  
 }
 
 /* ================================= 
@@ -80,10 +92,7 @@ header section div:last-of-type {
 }
 
 header section div:last-of-type h1 {
-    font-family: 'Secular One', sans-serif;
     font-size: 12rem;
-    line-height: 70px;
-    letter-spacing: -2px;
     text-shadow: 0 0 3px rgb(40, 40, 38); 
 }
 
@@ -113,7 +122,7 @@ aside nav ul {
 
 aside nav ul li {
     display: inline-block; 
-    margin: 0 3vw; 
+    margin: 0 1vw; 
 }
 
 aside nav ul li a {
@@ -144,24 +153,20 @@ main {
 
 /* About */
 main article {
-    margin: 0 0 25vh 0; 
+    margin-bottom: 15vh; 
     text-align: center;
     padding: 20vh 8vw 0 8vw; 
 }
 
-
-main article h2 { 
+main article div h2 span{ 
     font-size: 6rem;
-    font-weight: bold;
 }
 
-#marke { 
-    font-family: 'Secular One', sans-serif;
-    line-height: 70px;
-    letter-spacing: -2px;
+main article div p:last-of-type { 
+    margin-top: 5vh;
 }
 
-/* Main allgemein */
+/* Main Kategorien */
 main section {
     padding: 10vh 8vw;
     text-align: center;
@@ -170,16 +175,12 @@ main section {
 main section h2 { 
     font-family: 'Secular One', sans-serif;
     text-align: left;
-    font-weight: bold;
-    font-size: 6rem;
-    margin-bottom: 3vh;
-    
 }
 
 main section div div {
     display: inline-block;
-    padding: 0 auto; 
     margin: 0 auto;  
+    margin: 0 1vw;
 }
 
 main section div div img {
@@ -190,7 +191,6 @@ main section div div img {
 main section div div img:hover {
     box-shadow: 0 0 2px 2px rgb(249, 234, 63);
 }
-
 
 main section div div h3 {
     font-weight: bold;
@@ -215,20 +215,15 @@ main section div div button:hover {
     text-shadow: 0 0 1px rgb(40, 40, 38); 
 }
 
-main section div div {
-    display: inline-block;
-    padding: 0 auto; 
-    margin: 0 1vw; ;  
-}
-
 /* Newsletter */
 #newsletter {
     background: rgb(249, 234, 63); 
     color: rgb(40, 40, 38); 
-    width: 30vw; 
-    height: 55vh; 
+    width: 500px; 
+    height: 480px; 
     margin: 0 auto; 
     text-align: center; 
+    padding: 0 5%;
 }
 
 #newsletter > h2 {
@@ -260,7 +255,6 @@ main section div form input {
     background: rgb(40, 40, 38); 
     margin: 1vh auto; 
     width: 80%; 
-
 }
 
 /* ================================= 
@@ -276,17 +270,18 @@ footer div {
     padding: 5vh 0 0 10vw; 
 }
 
-footer div h2 { 
+footer div h4 { 
     font-family: 'Secular One', sans-serif;
     font-size: 4rem;
     font-weight: bold;
 }
 
-footer div p a {
+footer div a {
+    font-size: 3rem;
     color: white;
     text-decoration: none; 
 }
 
-footer div p a:hover {
+footer div a:hover {
     text-shadow: 0 0 5px rgb(249, 234, 63); 
 }
