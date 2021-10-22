@@ -22,7 +22,7 @@ html {
     font-family: 'Jura', sans-serif;
     font-size: 10px;
     scroll-behavior: smooth;
-    color: white; 
+    color: rgb(40, 40, 38); 
 }
 
 span {
@@ -59,18 +59,20 @@ header section > div {
 }
 
 header section div a {
+    font-family: 'Secular One', sans-serif;
     text-decoration: none;
     color: black;
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight: bold;
     background: rgb(249, 234, 63); 
-    padding: 20px 40px; 
-    border-radius: 5%;
+    padding: 90px 40px; 
+    border-radius: 50%;
     margin-left: 10vw; 
 }
 
 header section div:first-of-type a:hover {
     text-decoration: underline;
+    box-shadow: 0 0 2px 2px rgb(40, 40, 38);
 }
 
 header section div:last-of-type {
@@ -79,13 +81,14 @@ header section div:last-of-type {
 
 header section div:last-of-type h1 {
     font-family: 'Secular One', sans-serif;
-    font-size: 10rem;
+    font-size: 12rem;
     line-height: 70px;
     letter-spacing: -2px;
+    text-shadow: 0 0 3px rgb(40, 40, 38); 
 }
 
 header section div:last-of-type h1:first-of-type {
-    padding-top: 45vh; 
+    padding-top: 40vh; 
 }
 
 header section div:last-of-type h1:last-of-type {
@@ -114,6 +117,7 @@ aside nav ul li {
 }
 
 aside nav ul li a {
+    font-family: 'Secular One', sans-serif;
     font-size: 2.5rem;
     font-weight: bold;
     text-decoration: none;
@@ -121,11 +125,15 @@ aside nav ul li a {
     padding: 0 1vw;
 }
 
+aside nav ul li a:hover {
+    text-shadow: 0 0 1px rgb(40, 40, 38); 
+}
+
 /* ================================= 
         Main Styles
 ================================= */
 main {
-    background: linear-gradient(black, black), url("https://images.unsplash.com/photo-1575722290270-626b0208df99?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YmFja2dyb3VuZCUyMGRhcmt8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60");
+    background: linear-gradient(black, black), url("https://images.unsplash.com/photo-1541140134513-85a161dc4a00?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YmFja2dyb3VuZCUyMGdyZXl8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60");
     min-height: 500px;
     background-blend-mode: saturation;
     background-attachment: fixed;
@@ -160,10 +168,12 @@ main section {
 }
 
 main section h2 { 
+    font-family: 'Secular One', sans-serif;
     text-align: left;
     font-weight: bold;
     font-size: 6rem;
     margin-bottom: 3vh;
+    
 }
 
 main section div div {
@@ -176,6 +186,11 @@ main section div div img {
     width: 400px; 
     height: 500px; 
 }
+
+main section div div img:hover {
+    box-shadow: 0 0 2px 2px rgb(249, 234, 63);
+}
+
 
 main section div div h3 {
     font-weight: bold;
@@ -197,6 +212,7 @@ main section div div button {
 
 main section div div button:hover {
     text-decoration: underline; 
+    text-shadow: 0 0 1px rgb(40, 40, 38); 
 }
 
 main section div div {
@@ -209,8 +225,8 @@ main section div div {
 #newsletter {
     background: rgb(249, 234, 63); 
     color: rgb(40, 40, 38); 
-    width: 25vw; 
-    height: 50vh; 
+    width: 30vw; 
+    height: 55vh; 
     margin: 0 auto; 
     text-align: center; 
 }
@@ -220,15 +236,29 @@ main section div div {
     text-align: center; 
 }
 
+#newsletter form {
+    margin-top: 3vh; 
+}
+
+#signup {
+    margin-top: 2vh; 
+    padding: 1% 0; 
+    font-size: 3rem; 
+}
+
+#signup:hover {
+    box-shadow: 0 0 8px 2px rgb(40, 40, 38); 
+}
+
 #newsletter:hover {
-    box-shadow: 0 0 2px 2px rgb(249, 234, 63);
+    box-shadow: 0 0 8px 2px rgb(40, 40, 38);
 }
 
 main section div form input {
     display: block; 
     color: rgb(249, 234, 63); 
     background: rgb(40, 40, 38); 
-    margin-top: 1vh; 
+    margin: 1vh auto; 
     width: 80%; 
 
 }
@@ -239,6 +269,7 @@ main section div form input {
 footer {
     background: rgb(40, 40, 38);
     height: 30vh; 
+    color: white; 
 }
 
 footer div {
@@ -249,4 +280,13 @@ footer div h2 {
     font-family: 'Secular One', sans-serif;
     font-size: 4rem;
     font-weight: bold;
+}
+
+footer div p a {
+    color: white;
+    text-decoration: none; 
+}
+
+footer div p a:hover {
+    text-shadow: 0 0 5px rgb(249, 234, 63); 
 }
